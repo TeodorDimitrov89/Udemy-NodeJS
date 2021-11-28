@@ -12,4 +12,4 @@ Create a new node js project
     3. Add a form with a "username" <input> to the "/" page and submit a POST request to "/create-user" upon a button click
 
     4. Add the "create-user" route and parse the incomming data (i.e. the username) and simply log it to the console
-    ![This is an image](https://github.com/TeodorDimitrov89/Udemy-NodeJS/blob/02.nodejs-basics/task-1.png)
+    ![This is an image](task-1.png)
