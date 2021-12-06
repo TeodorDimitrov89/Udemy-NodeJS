@@ -1,15 +1,20 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "assignment-express",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "Udemy Express.js task",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "start-server": "node app.js"
+    "start": "nodemon app.js"
   },
+  "keywords": [
+    "Express.js"
+  ],
   "author": "Teodor Dimitrov",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
