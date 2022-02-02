@@ -1,11 +1,16 @@
-const mysql = require('mysql2');
+const Sequelize = require('sequelize');
 
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  database: 'node-complete',
-  password: '1234567'
-});
+const sequelize = new Sequelize('node-complete', 'root', '1234567', {
+  dialect: 'mysql',
+  host: 'localhost'
+})
+
+// const pool = mysql.createPool({
+//   host: 'localhost',
+//   user: 'root',
+//   database: 'node-complete',
+//   password: '1234567'
+// });
 
 
 //mysqld --defaults-file="C:\ProgramData\MySQL\MySQL Server 8.0\my.ini" --standalone --console
@@ -14,4 +19,4 @@ const pool = mysql.createPool({
 
 
 
-module.exports = pool.promise();
+module.exports = sequelize;
